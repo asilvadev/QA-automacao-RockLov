@@ -6,10 +6,12 @@ Funcionalidade: Cadastro de Anúncios
     Para que eu possa disponibiliza-los para locação
 
     Cenario: Novo equipamento
-        Dado que eu tenho o seguinte equipamento:
-            | thumb     | fender-sb.jpg |
-            | nome      | Fender Strato |
-            | categoria | Cordas        |
-            | preco     | 200           |
+        Dado que estou logado com "alan@temp.vc" e "pwd123"
+            E que acesso o formulario de cadastro de anuncio
+            E que eu tenho o seguinte equipamento:
+                | thumb     | fender-sb.jpg |
+                | nome      | Fender Strato |
+                | categoria | Cordas        |
+                | preco     | 200           |
         Quando submeto o cadastro desse item
         Então devo ver esse item no meu Dashboard
