@@ -6,7 +6,6 @@ Funcionalidade: Cadastro de Anúncios
     Para que eu possa disponibiliza-los para locação
 
     Cenario: Novo equipamento
-
         Dado que eu tenho o seguinte equipamento:
             | thumb     | fender-sb.jpg |
             | nome      | Fender Strato |
