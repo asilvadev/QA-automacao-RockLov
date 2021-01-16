@@ -12,7 +12,7 @@ Mongo::Logger.logger = Logger.new("./logs/mongo.log")
         end
 
         def remove_user(email)
-            @users.delete_many({ email: "alan@temp.vc" })
+            @users.delete_many({ email: email })
         end
 
         def get_user(email)
