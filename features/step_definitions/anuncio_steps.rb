@@ -1,10 +1,9 @@
 Dado('que estou logado com {string} e {string}') do |email, password|
     @email = email
-    visit "/"
-    find("input[placeholder= 'Seu e-email']").set email
-    find("input[type=password]").set password
+    
+    @loging_page.open
+    @loging_page.with(email, password)
 
-    click_button "Entrar"
 end
   
 Dado('que acesso o formulario de cadastro de anuncio') do

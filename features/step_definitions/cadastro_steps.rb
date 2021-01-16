@@ -5,7 +5,6 @@ end
 Quando('submeto o seguinte formulario de cadastro:') do  |table|
 
   user = table.hashes.first
-
   MongoDB.new.remove_user(user[:email])
   
   find("#fullName").set user[:nome]
@@ -13,6 +12,7 @@ Quando('submeto o seguinte formulario de cadastro:') do  |table|
   find("#password").set user[:senha]
 
   click_button "Cadastrar"
+
 end    
                                                                          
 

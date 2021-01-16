@@ -6,7 +6,7 @@ Funcionalidade: Cadastro de Anúncios
     Para que eu possa disponibiliza-los para locação
 
     Cenario: Novo equipamento
-        Dado que estou logado com "alan@temp.vc" e "pwd123"
+        Dado que estou logado com "alan2@temp.vc" e "pwd123"
             E que acesso o formulario de cadastro de anuncio
             E que eu tenho o seguinte equipamento:
                 | thumb     | fender-sb.jpg |
