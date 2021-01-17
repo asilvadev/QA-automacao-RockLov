@@ -4,4 +4,6 @@ Before do
 
     @loging_page = LoginPage.new
     
+    @signup_page = SignUp.new
+    
 end
