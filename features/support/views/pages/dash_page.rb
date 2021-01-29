@@ -3,7 +3,7 @@ class DashPage
     include Capybara::DSL
 
     def ondash?
-        return page.have_css?(".dashboard")
+        return page.has_css?(".dashboard")
     end
 
     def goto_equipo_form

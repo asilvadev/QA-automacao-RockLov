@@ -3,7 +3,7 @@ class EquiposPage
     include Capybara::DSL
 
     def create(equipo)
-        page.have_css?("#equipoForm") 
+        page.has_css?("#equipoForm") 
 
         thumb = Dir.pwd + "/features/support/fixtures/images/" + equipo[:thumb] 
 
