@@ -5,9 +5,12 @@ Funcionalidade: Cadastro de Anúncios
     Quero cadastrar meus equipamentos
     Para que eu possa disponibiliza-los para locação
 
+    Contexto: Login
+        * Login com "alan2@temp.vc" e "pwd123"
+
+
     Cenario: Novo equipamento
-        Dado que estou logado com "alan2@temp.vc" e "pwd123"
-            E que acesso o formulario de cadastro de anuncio
+        Dado que acesso o formulario de cadastro de anuncio
             E que eu tenho o seguinte equipamento:
                 | thumb     | fender-sb.jpg |
                 | nome      | Fender Strato |
