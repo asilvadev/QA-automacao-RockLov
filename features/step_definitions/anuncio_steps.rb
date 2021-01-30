@@ -1,4 +1,5 @@
-Dado('que estou logado com {string} e {string}') do |email, password|
+
+Dado('Login com {string} e {string}') do |email, password|
     @email = email
     
     @loging_page.open
