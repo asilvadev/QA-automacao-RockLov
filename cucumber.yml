@@ -1,6 +1,8 @@
 ---
-default: --publish-quiet -p allure -p bdd
+default: --publish-quiet -p allure -p bdd -p local
 bdd: -f pretty
 dots: -f progress
 html: -f html -o logs/reports.html
 allure: --format AllureCucumber::CucumberFormatter --out=logs
+local: CONFIG=local.yml
+hmg: CONFIG=hmg.yml
