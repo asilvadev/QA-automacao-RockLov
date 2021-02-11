@@ -1,0 +1,35 @@
+---
+- title: Wrong Password
+  payload:
+    email: alan2@temp.vc
+    password: 1pwd123
+  code: 401
+  error: Unauthorized
+- title: Wrong Email
+  payload:
+    email: 404@temp.vc
+    password: 1pwd123
+  code: 401
+  error: Unauthorized
+- title: Blank Email input
+  payload:
+    email: ''
+    password: 1pwd123
+  code: 412
+  error: required email
+- title: Undefined Email
+  payload:
+    password: 1pwd123
+  code: 412
+  error: required email
+- title: Blank Password input
+  payload:
+    email: temp
+    password: ''
+  code: 412
+  error: required password
+- title: Undefined Password
+  payload:
+    email: temp
+  code: 412
+  error: required password
