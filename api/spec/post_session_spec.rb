@@ -1,5 +1,3 @@
-require_relative "routes/sessions"
-
 describe "POST /session" do
   context "login com sucesso" do
     before(:all) do
