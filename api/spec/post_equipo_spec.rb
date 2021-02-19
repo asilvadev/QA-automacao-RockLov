@@ -16,6 +16,8 @@ describe "POST /equipos" do
         price: 299,
       }
 
+      MongoDB.new.remove_equipo(payload[:name], @user_id)
+
       @result = Equipos.new.create(payload, @user_id)
     end
 
