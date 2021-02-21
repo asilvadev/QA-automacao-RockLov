@@ -35,7 +35,7 @@ describe "GET /equipos/{equipo_id}" do
     end
   end
 
-  context "equip nao existe" do
+  context "equipo nao existe" do
     before(:all) do
       @result = Equipos.new.find_by_id(MongoDB.new.get_mongo_id, @user_id)
     end
