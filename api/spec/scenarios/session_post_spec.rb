@@ -2,7 +2,7 @@ describe "POST /session" do
   context "login com sucesso" do
     before(:all) do
       payload = {
-        email: "alan2@temp.vc",
+        email: "betao@hotmail.com",
         password: "pwd123",
       }
       @result = Sessions.new.login(payload)
@@ -20,7 +20,7 @@ describe "POST /session" do
   exemples = [
     {
       title: "Wrong Password",
-      payload: { email: "alan2@temp.vc", password: "1pwd123" },
+      payload: { email: "betao@hotmail.com", password: "1pwd123" },
       code: 401,
       error: "Unauthorized",
     },

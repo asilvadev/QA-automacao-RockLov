@@ -1,6 +1,6 @@
 describe "POST /equipos/{equipo_id}/bookings" do
   before(:all) do
-    result = Sessions.new.login({ email: "alan2@temp.vc", password: "pwd123" })
+    result = Sessions.new.login({ email: "ed@temp.vc", password: "pwd123" })
     @user_locator_id = result.parsed_response["_id"]
   end
 
@@ -8,7 +8,7 @@ describe "POST /equipos/{equipo_id}/bookings" do
     before(:all) do
       #dado que "alguem" tem um "equipamento" para locação
 
-      result = Sessions.new.login({ email: "alan3@temp.vc", password: "pwd123" })
+      result = Sessions.new.login({ email: "joe@temp.vc", password: "pwd123" })
       user_id = result.parsed_response["_id"]
 
       payload = {

@@ -1,6 +1,6 @@
 describe "GET /equipos/{equipo_id}" do
   before(:all) do
-    payload = { email: "alan2@temp.vc", password: "pwd123" }
+    payload = { email: "tomate@temp.vc", password: "pwd123" }
     result = Sessions.new.login(payload)
     @user_id = result.parsed_response["_id"]
   end
@@ -48,7 +48,7 @@ end
 
 describe "GET /equipos" do
   before(:all) do
-    payload = { email: "alan3@temp.vc", password: "pwd123" }
+    payload = { email: "penelope@temp.vc", password: "pwd123" }
     result = Sessions.new.login(payload)
     @user_id = result.parsed_response["_id"]
   end
