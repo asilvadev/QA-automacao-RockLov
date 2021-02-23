@@ -6,7 +6,7 @@ Funcionalidade: Cadastro de Anúncios
     Para que eu possa disponibiliza-los para locação
 
     Contexto: Login
-        * Login com "alan2@temp.vc" e "pwd123"
+        * Login com "alanCA@temp.vc" e "pwd123"
 
 
     Cenario: Novo equipamento
@@ -37,5 +37,5 @@ Funcionalidade: Cadastro de Anúncios
             | clarinete.jpg |                   | Outros    | 250   | Informe a descrição do anúncio!      |
             | mic.jpg       | Microfone Shure   |           | 100   | Informe a categoria                  |
             | trompete.jpg  | Trompete Clássico | Outros    |       | Informe o valor da diária            |
-            | conga.jpg     | Gonga             | Outros    | abc   | O valor da diária deve ser numérico! |
-            | conga.jpg     | Gonga             | Outros    | 150a  | O valor da diária deve ser numérico! |
+            | conga.jpg     | Conga             | Outros    | abc   | O valor da diária deve ser numérico! |
+            | conga.jpg     | Conga             | Outros    | 150a  | O valor da diária deve ser numérico! |

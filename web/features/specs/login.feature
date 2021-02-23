@@ -9,7 +9,7 @@ Funcionalidade: Login
     Cenario: Login do usuário
 
         Dado que acesso a pagina principal
-        Quando submeto minhas credenciais com "alan2@temp.vc" e "pwd123"
+        Quando submeto minhas credenciais com "alan_log@temp.vc" e "pwd123"
         Então sou redirecionado para o Dashboard
 
     Esquema do Cenario: Tentar logar
