@@ -4,12 +4,16 @@ Funcionalidade: Remover Anuncios
     Quero poder remover esse anuncio
     Para que eu possa manter o meu Dashboard atualizado
 
+    Contexto: Login
+        * Login com "alanRA@temp.vc" e "pwd123"
+
+    @temp-rmv
     Cenario: Remover um anuncio
         Dado que eu tenho um anuncio indesejado:
-            | thumb     | telecaster.jpg |
-            | nome      | Telecaster     |
-            | categoria | Cordas         |
-            | preco     | 50             |
+            | thumb     | amp.jpg |
+            | nome      | AMP     |
+            | categoria | Outros  |
+            | preco     | 225     |
         Quando eu solicito a exclusão desse item
             E confirmo a exclusão
         Então não devo ver esse item no meu Dashboard
