@@ -7,7 +7,6 @@ Funcionalidade: Remover Anuncios
     Contexto: Login
         * Login com "alanRA@temp.vc" e "pwd123"
 
-    @temp-rmv
     Cenario: Remover um anuncio
         Dado que eu tenho um anuncio indesejado:
             | thumb     | amp.jpg |
@@ -17,7 +16,8 @@ Funcionalidade: Remover Anuncios
         Quando eu solicito a exclusão desse item
             E confirmo a exclusão
         Então não devo ver esse item no meu Dashboard
-
+    
+    @temp-rmv
     Cenario: Desistir da exclusão
         Dado que eu tenho um anuncio indesejado:
             | thumb     | conga.jpg |
@@ -25,5 +25,5 @@ Funcionalidade: Remover Anuncios
             | categoria | Outros    |
             | preco     | 150       |
         Quando eu solicito a exclusão desse item
-            Mas nãoo confirmo a solicitação
-        Então devo ver esse item no meu Dashboard
+            Mas não confirmo a solicitação
+        Então esse item deve permanecer no meu Dashboard
