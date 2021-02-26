@@ -18,11 +18,21 @@ pipeline {
                 sh 'cd api && rspec'
             }
         }
+        stage('UAT'){
+            steps{
+                echo 'Aguardando testes de aceitação.'
+                input message: 'Prosseguir para produção?'
+            }
+        }
+        stage('Prod'){
+            steps {
+                echo 'API pronta para produção'
+            }
+        }
     }
     post {
         always{
             junit 'api/logs/report.xml'
-
         }
     }
 }
