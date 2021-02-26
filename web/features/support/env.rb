@@ -24,7 +24,7 @@ when "chrome_headless"
       opts.add_argument("--disable-dev-shm-usage")
     end
 
-    Capybara::Selenium::Driver.new(app, **Hash[:browser => :chrome, options_key => browser_options])
+    Capybara::Selenium::Driver.new(app, :browser :chrome, options: browser_options)
   end
   @driver = :selenium_chrome_headless
 else
