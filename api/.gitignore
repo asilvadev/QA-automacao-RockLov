@@ -4,4 +4,3 @@ logs/*.xml
 logs/*.json
 logs/*.png
 logs/*.csv
-Gemfile.lock
